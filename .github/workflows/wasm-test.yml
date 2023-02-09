@@ -1,0 +1,15 @@
+name: Test
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    container: ghcr.io/swiftwasm/swift:5.7
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - run: swift --version
+
+      - run: swift test
