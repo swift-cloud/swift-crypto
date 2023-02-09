@@ -12,4 +12,6 @@ jobs:
 
       - run: swift --version
 
+      - run: swift build
+
       - run: swift test --enable-test-discovery
